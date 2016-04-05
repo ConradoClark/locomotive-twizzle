@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.4f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -123,100 +121,12 @@
     <Compile Include="Assets\Scripts\Gameplay\UI\TextComponent.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Resources\Animations\SingleHitParticle_AnimController.controller" />
-    <None Include="Assets\Resources\Animations\SingleHitParticle_Normal.anim" />
-    <None Include="Assets\Resources\Animations\SmokePoof_AnimController.controller" />
-    <None Include="Assets\Resources\Animations\SmokePoof_Normal.anim" />
-    <None Include="Assets\Resources\Animations\Train_AnimController.controller" />
-    <None Include="Assets\Resources\Animations\Train_Standing.anim" />
     <None Include="Assets\Resources\Dictionary\en-us.txt" />
     <None Include="Assets\Resources\Dictionary\pt-br.txt" />
     <None Include="Assets\Resources\Levels\1.txt" />
-    <None Include="Assets\Resources\Materials\DefaultSpriteMaterial.mat" />
-    <None Include="Assets\Resources\Materials\Mono.mat" />
-    <None Include="Assets\Resources\Materials\StencilMask.mat" />
-    <None Include="Assets\Resources\Materials\StencilMaskContent.mat" />
-    <None Include="Assets\Resources\Prefabs\BGGrass.prefab" />
-    <None Include="Assets\Resources\Prefabs\Cursors\ClockCursor.prefab" />
-    <None Include="Assets\Resources\Prefabs\Cursors\HammerCursor.prefab" />
-    <None Include="Assets\Resources\Prefabs\Cursors\HandCursor.prefab" />
-    <None Include="Assets\Resources\Prefabs\DRTrack.prefab" />
-    <None Include="Assets\Resources\Prefabs\Effects\DoublePoof.prefab" />
-    <None Include="Assets\Resources\Prefabs\Effects\SingleParticleHit.prefab" />
-    <None Include="Assets\Resources\Prefabs\Effects\SmokePoof.prefab" />
-    <None Include="Assets\Resources\Prefabs\Effects\StarPoof.prefab" />
-    <None Include="Assets\Resources\Prefabs\Effects\WoodenExitPostHit.prefab" />
-    <None Include="Assets\Resources\Prefabs\Effects\WoodenParticleHit.prefab" />
-    <None Include="Assets\Resources\Prefabs\HTrack.prefab" />
-    <None Include="Assets\Resources\Prefabs\Icons\TrainMonoThumbnail.prefab" />
-    <None Include="Assets\Resources\Prefabs\Icons\TrainThumbnail.prefab" />
-    <None Include="Assets\Resources\Prefabs\Items\Clock.prefab" />
-    <None Include="Assets\Resources\Prefabs\Items\Hammer.prefab" />
-    <None Include="Assets\Resources\Prefabs\Items\Hand.prefab" />
-    <None Include="Assets\Resources\Prefabs\Items\Wrench.prefab" />
-    <None Include="Assets\Resources\Prefabs\LDTrack.prefab" />
-    <None Include="Assets\Resources\Prefabs\LUTrack.prefab" />
-    <None Include="Assets\Resources\Prefabs\Map Goals\AnyTrainExitsLevelGoal.prefab" />
-    <None Include="Assets\Resources\Prefabs\Map.prefab" />
-    <None Include="Assets\Resources\Prefabs\MapTile-Even.prefab" />
-    <None Include="Assets\Resources\Prefabs\MapTile-Odd.prefab" />
-    <None Include="Assets\Resources\Prefabs\TrainExit.prefab" />
-    <None Include="Assets\Resources\Prefabs\Train_2T.prefab" />
-    <None Include="Assets\Resources\Prefabs\Train_5T.prefab" />
-    <None Include="Assets\Resources\Prefabs\UI\Bar.prefab" />
-    <None Include="Assets\Resources\Prefabs\UI\BarSplitter.prefab" />
-    <None Include="Assets\Resources\Prefabs\UI\BarTick.prefab" />
-    <None Include="Assets\Resources\Prefabs\UI\ItemCountCircle.prefab" />
-    <None Include="Assets\Resources\Prefabs\UI\TurnCloud.prefab" />
-    <None Include="Assets\Resources\Prefabs\URTrack.prefab" />
-    <None Include="Assets\Resources\Prefabs\VTrack.prefab" />
     <None Include="Assets\Resources\Shaders\SpriteShader.shader" />
     <None Include="Assets\Resources\Shaders\SpriteStencilMaskContentShader.shader" />
     <None Include="Assets\Resources\Shaders\SpriteStencilMaskShader.shader" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="Assets\Resources\Sprites\BarBackground.png" />
-    <Content Include="Assets\Resources\Sprites\BarForeground.png" />
-    <Content Include="Assets\Resources\Sprites\BGGrass.png" />
-    <Content Include="Assets\Resources\Sprites\Clock.png" />
-    <Content Include="Assets\Resources\Sprites\clockcursor.png" />
-    <Content Include="Assets\Resources\Sprites\CTrack_All.png" />
-    <Content Include="Assets\Resources\Sprites\desert_s2.png" />
-    <Content Include="Assets\Resources\Sprites\exitdoor_icon.png" />
-    <Content Include="Assets\Resources\Sprites\Font-Inverted.png" />
-    <Content Include="Assets\Resources\Sprites\Font.png" />
-    <Content Include="Assets\Resources\Sprites\GoalTick.png" />
-    <Content Include="Assets\Resources\Sprites\Hammer.png" />
-    <Content Include="Assets\Resources\Sprites\hammercursor.png" />
-    <Content Include="Assets\Resources\Sprites\hammerhandcursor.png" />
-    <Content Include="Assets\Resources\Sprites\Hand.png" />
-    <Content Include="Assets\Resources\Sprites\handcursor.png" />
-    <Content Include="Assets\Resources\Sprites\HealthTick.png" />
-    <Content Include="Assets\Resources\Sprites\HTrack_All.png" />
-    <Content Include="Assets\Resources\Sprites\icon_frame.png" />
-    <Content Include="Assets\Resources\Sprites\InventoryItem.png" />
-    <Content Include="Assets\Resources\Sprites\InventoryScrollButton.png" />
-    <Content Include="Assets\Resources\Sprites\inventory_background.png" />
-    <Content Include="Assets\Resources\Sprites\ItemCountCircle.png" />
-    <Content Include="Assets\Resources\Sprites\ItemIconsBackground.png" />
-    <Content Include="Assets\Resources\Sprites\MapDirtCell.png" />
-    <Content Include="Assets\Resources\Sprites\maptile_even.png" />
-    <Content Include="Assets\Resources\Sprites\maptile_odd.png" />
-    <Content Include="Assets\Resources\Sprites\map_background.png" />
-    <Content Include="Assets\Resources\Sprites\map_backgroundcolor.png" />
-    <Content Include="Assets\Resources\Sprites\next_frame.png" />
-    <Content Include="Assets\Resources\Sprites\Nothing.png" />
-    <Content Include="Assets\Resources\Sprites\ParticleHit.png" />
-    <Content Include="Assets\Resources\Sprites\Particle_Star.png" />
-    <Content Include="Assets\Resources\Sprites\score_background.png" />
-    <Content Include="Assets\Resources\Sprites\selectitems_background.png" />
-    <Content Include="Assets\Resources\Sprites\SmokePoof.png" />
-    <Content Include="Assets\Resources\Sprites\TrainExit.png" />
-    <Content Include="Assets\Resources\Sprites\Train_Spritesheet.png" />
-    <Content Include="Assets\Resources\Sprites\TurnCloud.png" />
-    <Content Include="Assets\Resources\Sprites\Verdigris.png" />
-    <Content Include="Assets\Resources\Sprites\Wrench_Normal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
