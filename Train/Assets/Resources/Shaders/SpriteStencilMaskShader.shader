@@ -5,6 +5,7 @@
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 		_Color("Tint", Color) = (1,1,1,1)
 		[MaterialToggle] PixelSnap("Pixel snap", Float) = 0
+		_Ref ("Mask Reference", int) = 1
 	}
 
 		SubShader
@@ -28,7 +29,7 @@
 	{
 		Stencil
 	{
-		Ref 1
+		Ref [_Ref]
 		Comp always
 		Pass replace
 	}
