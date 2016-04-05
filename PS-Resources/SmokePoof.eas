@@ -1,0 +1,110 @@
+﻿{"frames": [
+
+{
+   "filename": "BLACK",
+   "frame": {"x":0, "y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "PALETTE",
+   "frame": {"x":2.22222222222222, "y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1",
+   "frame": {"x":4.44444444444444, "y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy",
+   "frame": {"x":6.66666666666666, "y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 2",
+   "frame": {"x":0, "y":2.22222222222222,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 3",
+   "frame": {"x":2.22222222222222, "y":2.22222222222222,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 4",
+   "frame": {"x":4.44444444444444, "y":2.22222222222222,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 5",
+   "frame": {"x":6.66666666666666, "y":2.22222222222222,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 6",
+   "frame": {"x":0, "y":4.44444444444444,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 7",
+   "frame": {"x":2.22222222222222, "y":4.44444444444444,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 8",
+   "frame": {"x":4.44444444444444, "y":4.44444444444444,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+,{
+   "filename": "Layer 1 copy 9",
+   "frame": {"x":6.66666666666666, "y":4.44444444444444,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {"x":0,"y":0,"w":2.22222222222222 in, "h":2.22222222222222 in},
+   "sourceSize": {"w":2.22222222222222 in,"h":2.22222222222222 in}
+}
+],
+"meta": {
+   "app": "Adobe Flash Professional",
+   "version": "14.0",
+   "Target": "Edge Animate",
+   "Target Version": "4.0",
+   "image": "SmokePoof.png",
+   "format": "RGBA8888",
+   "size": {"w":640 ,"h":480 },
+   "scale": "1"
+}
+}

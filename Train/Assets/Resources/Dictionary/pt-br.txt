@@ -1,0 +1,6 @@
+﻿Score|Pontos
+Items|Itens
+Turns|Turnos
+Goals|Metas
+Next|Proximo
+Effect|Efeito
