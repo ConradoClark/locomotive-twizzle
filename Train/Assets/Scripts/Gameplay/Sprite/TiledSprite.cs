@@ -1,7 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using Assets.Scripts.Gameplay.Helper;
 using System.Collections.Generic;
-using Assets.Scripts.Gameplay.Helper;
+using UnityEngine;
 
 [RequireComponent(typeof(RectTransform))]
 public class TiledSprite : MonoBehaviour
@@ -19,13 +18,13 @@ public class TiledSprite : MonoBehaviour
     private List<SpriteRenderer> allSpriteRenderers;
     private List<SpriteRenderer> spriteRenderersInner;
     private List<SpriteRenderer> spriteRenderersHorizontal;
-    private List<SpriteRenderer> spriteRenderersVertical;        
-    public Vector2 scrollSpeed;    
+    private List<SpriteRenderer> spriteRenderersVertical;
+    public Vector2 scrollSpeed;
 
-    void Start()
+    private void Start()
     {
         this.rectTransform = this.GetComponent<RectTransform>();
-        this.spriteRenderersInner = new List<SpriteRenderer>(); 
+        this.spriteRenderersInner = new List<SpriteRenderer>();
         this.spriteRenderersHorizontal = new List<SpriteRenderer>();
         this.spriteRenderersVertical = new List<SpriteRenderer>();
         this.allSpriteRenderers = new List<SpriteRenderer>();
@@ -60,8 +59,8 @@ public class TiledSprite : MonoBehaviour
         var xpos = column * this.sprite.bounds.size.x - columns * this.sprite.bounds.size.x / 2 + this.sprite.bounds.size.x / 2;
         return new Vector3(xpos, row * this.sprite.bounds.size.y - rows * this.sprite.bounds.size.y / 2 + this.sprite.bounds.size.y / 2);
     }
-    
-    void LateUpdate()
+
+    private void LateUpdate()
     {
         Vector2 speed = new Vector2(scrollSpeed.x * Time.deltaTime * 60f, scrollSpeed.y * Time.deltaTime * 60f);
 
