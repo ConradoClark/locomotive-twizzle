@@ -76,11 +76,6 @@ public class MapHealth : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-
-    }
-
     public int GetCurrentHealth()
     {
         return this.currentHealth;
