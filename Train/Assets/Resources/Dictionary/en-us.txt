@@ -1,1 +1,7 @@
-﻿
+﻿Score|Score
+Items|Items
+Turns|Turns
+Goals|Goals
+Next|Next
+Effect|Effect
+HammerDescription|aaaasdsadsad

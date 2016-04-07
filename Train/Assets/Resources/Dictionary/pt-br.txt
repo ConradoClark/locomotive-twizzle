@@ -4,3 +4,4 @@ Turns|Turnos
 Goals|Metas
 Next|Proximo
 Effect|Efeito
+HammerDescription|aaa
