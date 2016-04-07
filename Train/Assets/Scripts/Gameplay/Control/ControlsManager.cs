@@ -36,8 +36,8 @@ public class ControlsManager : MonoBehaviour, IInputControl
         return new ItemActionState(false, false);
     }
 
-    public PositionActionState[] GetInputStatesOnPosition(GameObject boundaries)
+    public PositionActionState<T>[] GetInputStatesOnPosition<T>(GameObject boundaries) where T:MonoBehaviour
     {
-        return inputControls.SelectMany(ic => ic.GetInputStatesOnPosition(boundaries)).ToArray();
+        return inputControls.SelectMany(ic => ic.GetInputStatesOnPosition<T>(boundaries)).ToArray();
     }
 }

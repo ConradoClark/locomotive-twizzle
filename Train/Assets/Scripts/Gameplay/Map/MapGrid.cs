@@ -33,15 +33,15 @@ public class MapGrid : MonoBehaviour
     public bool HasFinished { get; private set; }
     public RectTransform MapPartTransform { get; private set; }
 
-    private PositionActionState[] inputStatesOnMap;
-    public PositionActionState[] InputStatesOnMap
+    private PositionActionState<MapActor>[] inputStatesOnMap;
+    public PositionActionState<MapActor>[] InputStatesOnMap
     {
         get
         {
-            if (MapPartTransform == null) return new PositionActionState[0];
+            if (MapPartTransform == null) return new PositionActionState<MapActor>[0];
             if (inputStatesOnMap == null)
             {
-                inputStatesOnMap = gameManager.Controls.GetInputStatesOnPosition(MapPartTransform.gameObject);
+                inputStatesOnMap = gameManager.Controls.GetInputStatesOnPosition<MapActor>(MapPartTransform.gameObject);
             }
             return inputStatesOnMap;
         }

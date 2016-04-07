@@ -1,15 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InventoryScrollButton : MonoBehaviour {
+public class InventoryScrollButton : InventoryClickable
+{
+    public Vector2 ScrollAmount;
+    void Start()
+    {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
 }

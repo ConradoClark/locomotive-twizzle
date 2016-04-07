@@ -57,10 +57,10 @@ public class MouseControl : MonoBehaviour, IInputControl
         return new ItemActionState(isHovering, isUsingMainAction);
     }
 
-    public PositionActionState[] GetInputStatesOnPosition(GameObject boundaries)
+    public PositionActionState<T>[] GetInputStatesOnPosition<T>(GameObject boundaries) where T:MonoBehaviour
     {
         var rectTransform = boundaries.GetComponent<RectTransform>();
-        if (rectTransform == null) return new PositionActionState[0];
+        if (rectTransform == null) return new PositionActionState<T>[0];
 
         var mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
         var actualRect = RectTransformHelper.GetRectInWorldPosition(rectTransform);
@@ -70,28 +70,28 @@ public class MouseControl : MonoBehaviour, IInputControl
         bool isReleasingMainAction = isHovering && Input.GetMouseButtonUp(Constants.Input.LeftMouseButton);
         bool isMainActionHeldDown = Input.GetMouseButton(Constants.Input.LeftMouseButton);
 
-        //if (isReleasingMainAction)
-        //{
-        //    Debug.Log("Released Main Action Button! " + boundaries.name);
-        //}
+        if (isReleasingMainAction)
+        {
+            Debug.Log("Released Main Action Button! " + boundaries.name);
+        }
 
-        MapActor[] objects = boundaries.transform.OfType<RectTransform>()
+        T[] objects = boundaries.transform.OfType<RectTransform>()
                                                    .Concat(new[] { rectTransform })
                                                    .Where(child => RectTransformHelper.GetRectInWorldPosition(child).Contains(mousePosition))
-                                                   .Select(t => t.gameObject.GetComponent<MapActor>())
+                                                   .Select(t => t.gameObject.GetComponent<T>())
                                                    .Where(actor=>actor!= null)
                                                    .ToArray();
 
-        //foreach (var obj in objects.Select(obj => obj.GetComponent<RectTransform>()))
-        //{
-        //    var rect = RectTransformHelper.GetRectInWorldPosition(obj);
-        //    Debug.DrawLine(new Vector3(rect.xMin, rect.yMin, 0), new Vector3(rect.xMax, rect.yMin, 0), Color.green);
-        //    Debug.DrawLine(new Vector3(rect.xMin, rect.yMin, 0), new Vector3(rect.xMin, rect.yMax, 0), Color.green);
-        //    Debug.DrawLine(new Vector3(rect.xMin, rect.yMax, 0), new Vector3(rect.xMax, rect.yMax, 0), Color.green);
-        //    Debug.DrawLine(new Vector3(rect.xMax, rect.yMin, 0), new Vector3(rect.xMax, rect.yMax, 0), Color.green);
-        //}
+        foreach (var obj in objects.Select(obj => obj.GetComponent<RectTransform>()))
+        {
+            var rect = RectTransformHelper.GetRectInWorldPosition(obj);
+            Debug.DrawLine(new Vector3(rect.xMin, rect.yMin, 0), new Vector3(rect.xMax, rect.yMin, 0), Color.blue);
+            Debug.DrawLine(new Vector3(rect.xMin, rect.yMin, 0), new Vector3(rect.xMin, rect.yMax, 0), Color.blue);
+            Debug.DrawLine(new Vector3(rect.xMin, rect.yMax, 0), new Vector3(rect.xMax, rect.yMax, 0), Color.blue);
+            Debug.DrawLine(new Vector3(rect.xMax, rect.yMin, 0), new Vector3(rect.xMax, rect.yMax, 0), Color.blue);
+        }
 
-        return new PositionActionState[1] { new PositionActionState(mousePosition, isHovering, isUsingMainAction, isReleasingMainAction, isMainActionHeldDown, objects) };
+        return new PositionActionState<T>[1] { new PositionActionState<T>(mousePosition, isHovering, isUsingMainAction, isReleasingMainAction, isMainActionHeldDown, objects) };
     }
 
 }

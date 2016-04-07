@@ -18,7 +18,7 @@ public class MapFloater : MonoBehaviour
     private bool holdingWhenReady;
     private Queue<Coroutine> pushawayCoroutines;
     private Queue<Coroutine> blinkCoroutines;
-    private PositionActionState[] inputStates;
+    private PositionActionState<MapActor>[] inputStates;
     private MapActor mapActor;
 
     public bool IsDraggable;
@@ -65,7 +65,7 @@ public class MapFloater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.inputStates = gameManager.Controls.GetInputStatesOnPosition(this.gameObject);
+        this.inputStates = gameManager.Controls.GetInputStatesOnPosition<MapActor>(this.gameObject);
         if (this.IsReadyToPickUp && this.IsFloating && !this.IsInDragMode && this.IsDraggable)
         {
             if (CheckDragMode()) return;

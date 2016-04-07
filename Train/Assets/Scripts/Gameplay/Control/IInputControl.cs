@@ -10,6 +10,6 @@ namespace Assets.Scripts.Gameplay.Control
     public interface IInputControl
     {
         ItemActionState GetInputStateOnItem(ItemRender item);
-        PositionActionState[] GetInputStatesOnPosition(GameObject boundaries);
+        PositionActionState<T>[] GetInputStatesOnPosition<T>(GameObject boundaries) where T : MonoBehaviour;
     }
 }
